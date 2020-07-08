@@ -1,5 +1,9 @@
+require('dotenv').config()
+require('./configs/mongoose.config')
 
 const cheerio = require('cheerio'),
+    mongoose = require('mongoose'),
+    Product = require('./models/product.model')
     request = require('request-promise')
 
 async function init() {
@@ -15,7 +19,6 @@ async function init() {
     
         const productPrice = $(el).find('div span.price.product-price')
         console.log(i, productTitle.html(), productPrice.text())
-
 
     })
 }
