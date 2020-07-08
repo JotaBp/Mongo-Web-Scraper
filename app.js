@@ -20,6 +20,19 @@ async function init() {
         const productPrice = $(el).find('div span.price.product-price')
         console.log(i, productTitle.html(), productPrice.text())
 
+        const productsDetails = new Product({
+            productName: productTitle.html(),
+            productPrice: productPrice.text()
+        })
+
+        Product.create(productsDetails)
+        .catch(err => {
+            console.log(err)
+            return next(new Error(err))
+        })
+
+        console.log('data saved correctly')
+
     })
 }
 
