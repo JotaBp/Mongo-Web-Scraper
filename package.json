@@ -1,0 +1,31 @@
+{
+  "name": "mongo-web-scraper",
+  "version": "1.0.0",
+  "description": "First step of a web scraper with NodeJs, Cheerio, Request and MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JotaBp/Mongo-Web-Scraper.git"
+  },
+  "keywords": [
+    "web-scraper",
+    "scraping",
+    "node",
+    "cheerio",
+    "request",
+    "mongodb"
+  ],
+  "author": "Julian Bajo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JotaBp/Mongo-Web-Scraper/issues"
+  },
+  "homepage": "https://github.com/JotaBp/Mongo-Web-Scraper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request-promise": "^4.2.5"
+  }
+}
